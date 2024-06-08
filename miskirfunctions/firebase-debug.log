@@ -1,0 +1,107 @@
+[debug] [2024-06-07T19:04:45.436Z] ----------------------------------------------------------------------
+[debug] [2024-06-07T19:04:45.442Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\miske\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-06-07T19:04:45.443Z] CLI Version:   13.11.0
+[debug] [2024-06-07T19:04:45.443Z] Platform:      win32
+[debug] [2024-06-07T19:04:45.443Z] Node Version:  v20.11.1
+[debug] [2024-06-07T19:04:45.446Z] Time:          Fri Jun 07 2024 22:04:45 GMT+0300 (East Africa Time)
+[debug] [2024-06-07T19:04:45.446Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-07T19:04:45.453Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-06-07T19:04:45.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-07T19:04:45.791Z] > authorizing via signed-in user (miskerbab@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-06-07T19:04:45.818Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4010 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4010 instead."}}
+[debug] [2024-06-07T19:04:45.827Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4010},{"address":"::1","family":"IPv6","port":4010}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-mb. This may result in unexpected behavior. 
+[debug] [2024-06-07T19:04:45.912Z] [hub] writing locator at C:\Users\miske\AppData\Local\Temp\hub-clone-mb.json
+[debug] [2024-06-07T19:04:46.032Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-06-07T19:04:46.033Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-06-07T19:04:46.033Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4010},{"address":"::1","family":"IPv6","port":4010}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-06-07T19:04:46.051Z] defaultcredentials: writing to file C:\Users\miske\AppData\Roaming\firebase\miskerbab_gmail_com_application_default_credentials.json
+[debug] [2024-06-07T19:04:46.072Z] Setting GAC to C:\Users\miske\AppData\Roaming\firebase\miskerbab_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\miske\\AppData\\Roaming\\firebase\\miskerbab_gmail_com_application_default_credentials.json"}}
+[debug] [2024-06-07T19:04:46.077Z] > refreshing access token with scopes: []
+[debug] [2024-06-07T19:04:46.082Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-07T19:04:46.083Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-07T19:04:46.782Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-07T19:04:46.783Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-07T19:04:46.824Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-mb/adminSdkConfig [none]
+[debug] [2024-06-07T19:04:46.988Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-06-07T19:04:46.988Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-06-07T19:04:47.580Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-mb/adminSdkConfig 200
+[debug] [2024-06-07T19:04:47.580Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-mb/adminSdkConfig {"projectId":"clone-mb","storageBucket":"clone-mb.appspot.com"}
+[debug] [2024-06-07T19:04:47.660Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-06-07T19:04:47.661Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-06-07T19:04:47.661Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\miske\\.cache\\firebase\\emulators\\ui-v1.12.1\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\miske\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.12.1\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-06-07T19:04:48.161Z] Web / API server started at 127.0.0.1:4010
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4010\n"}}
+[debug] [2024-06-07T19:04:48.166Z] Web / API server started at ::1:4010
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4010\n"}}
+[info] i  functions: Watching "C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\miske\\Desktop\\New folder (3)\\amazon-miskirb\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2024-06-07T19:04:48.177Z] Customer code is not Node
+[debug] [2024-06-07T19:04:48.178Z] Customer code is not Python code.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Could not detect runtime for functions at C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Could not detect runtime for functions at C:\\Users\\miske\\Desktop\\New folder (3)\\amazon-miskirb\\amazon-clone\\functions"}}
+[info] i  functions: Watching "C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\amazon-miskir" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\miske\\Desktop\\New folder (3)\\amazon-miskirb\\amazon-clone\\amazon-miskir\" for Cloud Functions..."}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: could not deploy functions because the "amazon-miskir" directory was not found. Please create it or specify a different source directory in firebase.json {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: could not deploy functions because the \u001b[1m\"amazon-miskir\"\u001b[22m directory was not found. Please create it or specify a different source directory in firebase.json"}}
+[info] i  functions: Watching "C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\functionss" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\miske\\Desktop\\New folder (3)\\amazon-miskirb\\amazon-clone\\functionss\" for Cloud Functions..."}}
+[debug] [2024-06-07T19:04:48.193Z] Customer code is not Node
+[debug] [2024-06-07T19:04:48.194Z] Customer code is not Python code.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Could not detect runtime for functions at C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\functionss {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Could not detect runtime for functions at C:\\Users\\miske\\Desktop\\New folder (3)\\amazon-miskirb\\amazon-clone\\functionss"}}
+[info] i  functions: Watching "C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\miskirfunctions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\miske\\Desktop\\New folder (3)\\amazon-miskirb\\amazon-clone\\miskirfunctions\" for Cloud Functions..."}}
+[debug] [2024-06-07T19:04:48.204Z] Validating nodejs source
+[debug] [2024-06-07T19:04:52.925Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^15.9.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-07T19:04:52.925Z] Building nodejs source
+[debug] [2024-06-07T19:04:52.926Z] Failed to find version of module node: reached end of search path C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\miskirfunctions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-06-07T19:04:52.935Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-07T19:04:52.951Z] Found firebase-functions binary at 'C:\Users\miske\Desktop\New folder (3)\amazon-miskirb\amazon-clone\miskirfunctions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8516
+
+[debug] [2024-06-07T19:04:54.900Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-mb/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-mb/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4010/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4010/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
